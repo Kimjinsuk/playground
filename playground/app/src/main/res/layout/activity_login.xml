@@ -1,3 +1,4 @@
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,9 +9,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.peesit.playground.LoginActivity">
+    tools:context="org.jjstreet.jjstreet.LoginActivity"
+    android:background="@color/colorBackGround">
 
     <!-- Login progress -->
+
+
     <ProgressBar
         android:id="@+id/login_progress"
         style="?android:attr/progressBarStyleLarge"
@@ -22,17 +26,34 @@
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="false">
 
         <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="1">
 
+            <!-- Logo 이미지 생성 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/logo_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo2"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+
+            <!-- E-mail 주소 입력칸 -->
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
                 <AutoCompleteTextView
                     android:id="@+id/email"
@@ -45,9 +66,12 @@
 
             </android.support.design.widget.TextInputLayout>
 
+
+            <!-- PASSWORD 입력칸 -->
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                >
 
                 <EditText
                     android:id="@+id/password"
@@ -63,14 +87,70 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <Button
-                android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
+            <!-- ID와 PW찾기 -->
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:text="FIND YOUR ID/PW"
+                android:layout_gravity="right" />
+
+
+            <!-- LOGIN 과 회원가입 버튼을 묶어줌 -->
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
-                android:textStyle="bold" />
+                >
+
+                <Button
+                    android:id="@+id/email_log_in_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/action_log_in"
+                    android:textStyle="bold"
+                    android:background="@color/colorButtonBackGround"
+                    android:layout_gravity="right"
+                    android:clickable="true" />
+
+                <Button
+                    android:id="@+id/email_sign_up_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/action_sign_up"
+                    android:textStyle="bold"
+                    android:background="@color/colorButtonBackGround"
+                    android:clickable="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- 자동로그인 CheckBox 구성 -->
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_auto_login"
+                android:id="@+id/checkBox"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:checked="false" />
+
+
+            <!-- Copyright -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/action_copyright"
+                    android:id="@+id/textView"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"/>
+            </android.support.design.widget.TextInputLayout>
+
 
         </LinearLayout>
     </ScrollView>
