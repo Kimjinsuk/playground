@@ -195,7 +195,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
         View focusView = null;
 
         // Check for a valid password, if the user entered one.
-        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
+        if (TextUtils.isEmpty(password) || !isPasswordValid(password)) {
             mPasswordView.setError(getString(R.string.error_invalid_password));
             focusView = mPasswordView;
             cancel = true;
@@ -358,7 +358,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                 // Otherwise, set the URL to null.
                 Uri.parse("http://host/path"),
                 // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://org.jjstreet.jjstreet/http/host/path")
+                Uri.parse("android-app://org.playground.playground/http/host/path")
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();

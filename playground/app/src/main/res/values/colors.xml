@@ -5,6 +5,6 @@
     <color name="colorAccent">#383838</color>
     <color name="colorBackGround">#86d4f6</color>
     <color name="colorButtonBackGround">#42a5f5</color>
-
+    <color name="whiteBackGround">#ffffff</color>
 
 </resources>

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackGround"
+    tools:context=".ClauseActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="@string/text_clause"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:background="@color/whiteBackGround"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        </ScrollView>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_agree"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginBottom="20dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_no_agree"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:checked="true"/>
+            </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Check"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Cancel"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
