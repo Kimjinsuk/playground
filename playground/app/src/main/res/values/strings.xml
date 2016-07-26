@@ -14,6 +14,7 @@
     <string name="error_invalid_password">비밀번호가 유효하지 않습니다.</string>
     <string name="error_incorrect_password">비밀번호를 확인해주세요.</string>
     <string name="error_field_required">This field is required</string>
+<<<<<<< HEAD
     <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
     <string name="radio_agree">동의합니다.</string>
     <string name="radio_no_agree">동의하지 않습니다.</string>
@@ -35,4 +36,15 @@
 
 (‘www.playground.com’이하 ‘playground) 은(는) 정보주체의 별도 동의, 법률의 특별한 규정 등 개인정보 보호법 제17조에 해당하는 경우 외에는 개인정보를 제3자에게 제공하지 않습니다.</string>
 
+=======
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="baseball">야구</string>
+    <string name="basketball">농구</string>
+    <string name="soccer">축구</string>
+    <string name="table_tennis">탁구</string>
+    <string name="foot_volleyball">족구</string>
+>>>>>>> 4b627c9b805a86cea84e724372f16544f5b7cbaa
 </resources>
