@@ -20,18 +20,14 @@ public class ClauseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clause);
 
-<<<<<<< HEAD
+
         final RadioButton rbtn_agree = (RadioButton) findViewById(R.id.rbtn_agree);
         final RadioButton rbtn_nonagree = (RadioButton) findViewById(R.id.rbtn_nonagree);
         btn_check = (Button) findViewById(R.id.btnClauseCheck);
         btn_cancel = (Button) findViewById(R.id.btnClauseCancel);
-=======
-        radio = (RadioGroup) findViewById(R.id.rgclause);
->>>>>>> afc9d0841545037cf7a69eeb7067145e13499c16
 
         btn_check.setEnabled(false);
 
-<<<<<<< HEAD
 
 
         rbtn_agree.setOnClickListener(new View.OnClickListener(){
@@ -43,20 +39,10 @@ public class ClauseActivity extends AppCompatActivity {
         });
 
         rbtn_nonagree.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+            public void onClick(View v) {
                 btn_check.setEnabled(false);
                 btn_check.setClickable(false);
                 btn_check.setFocusable(false);
-=======
-            @Override
-            public void onClick(View v) {
-                //public int getCheckedRadioButtonId () : 선택된 라디오버튼의 ID값을 반환
-                //RadioButton rd = (RadioButton) findViewById(radio.getCheckedRadioButtonId());
-                //String str_Qtype = rd.getText().toString();
-//
-                //Toast.makeText(getApplicationContext(), str_Qtype+" 선택됨",
-                //        Toast.LENGTH_SHORT).show();
->>>>>>> afc9d0841545037cf7a69eeb7067145e13499c16
             }
         });
 
