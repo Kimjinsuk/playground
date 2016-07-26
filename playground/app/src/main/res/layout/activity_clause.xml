@@ -32,14 +32,12 @@
         </ScrollView>
 
 
-
-
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="17dp"
                 android:layout_marginLeft="10dp"
-                android:id="@+id/rbtnclause"
+                android:id="@+id/rgclause"
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical">
                 <RadioButton
@@ -58,6 +56,7 @@
                     android:textStyle="bold"
                     android:fontFamily="sans-serif"
                     android:checked="true"/>
+
             </RadioGroup>
 
         <LinearLayout

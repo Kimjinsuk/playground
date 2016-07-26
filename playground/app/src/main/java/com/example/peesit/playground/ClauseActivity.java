@@ -21,7 +21,7 @@ public class ClauseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clause);
 
-        radio = (RadioGroup) findViewById(R.id.rbtnclause);
+        radio = (RadioGroup) findViewById(R.id.rgclause);
 
         btn = (Button) findViewById(R.id.btnclasecheck);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -29,11 +29,11 @@ public class ClauseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //public int getCheckedRadioButtonId () : 선택된 라디오버튼의 ID값을 반환
-                RadioButton rd = (RadioButton) findViewById(radio.getCheckedRadioButtonId());
-                String str_Qtype = rd.getText().toString();
-
-                Toast.makeText(getApplicationContext(), str_Qtype+" 선택됨",
-                        Toast.LENGTH_SHORT).show();
+                //RadioButton rd = (RadioButton) findViewById(radio.getCheckedRadioButtonId());
+                //String str_Qtype = rd.getText().toString();
+//
+                //Toast.makeText(getApplicationContext(), str_Qtype+" 선택됨",
+                //        Toast.LENGTH_SHORT).show();
             }
         });
 
