@@ -88,10 +88,22 @@ public class SignUpActivity extends AppCompatActivity {
 
                 // 비밀번호 일치 확인
                 if( !etPassword.getText().toString().equals(etPasswordConfirm.getText().toString()) ) {
-                    Toast.makeText(SignUpActivity.this, "비밀번호가 일치하지 않습니다!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpActivity.this, "비밀번호가 일치하지 않습니다!", Toast.LENGTH_LONG).show();
                     etPassword.setText("");
                     etPasswordConfirm.setText("");
                     etPassword.requestFocus();
+                    return;
+                }
+                //이름 입력 확인
+                if( etPersonName.getText().toString().length() == 0 ) {
+                    Toast.makeText(SignUpActivity.this, "이름을 입력하세요!", Toast.LENGTH_LONG).show();
+                    etPersonName.requestFocus();
+                    return;
+                }
+                //핸드폰 번호 입력 확인
+                if( etPhone.getText().toString().length() == 0 ) {
+                    Toast.makeText(SignUpActivity.this, "휴대폰번호를 입력하세요!", Toast.LENGTH_LONG).show();
+                    etPhone.requestFocus();
                     return;
                 }
 
