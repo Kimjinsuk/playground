@@ -23,7 +23,7 @@ public class ClauseActivity extends AppCompatActivity {
 
         radio = (RadioGroup) findViewById(R.id.rbtnclause);
 
-        btn = (Button) findViewById(R.id.btnclasecheck);
+        btn = (Button) findViewById(R.id.btnClauseCheck);
         btn.setOnClickListener(new View.OnClickListener() {
 
             @Override
