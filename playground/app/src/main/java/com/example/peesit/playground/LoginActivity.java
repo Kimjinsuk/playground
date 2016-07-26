@@ -371,11 +371,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                 // Otherwise, set the URL to null.
                 Uri.parse("http://host/path"),
                 // TODO: Make sure this auto-generated app URL is correct.
-<<<<<<< HEAD
-                Uri.parse("android-app://org.playground.playground/http/host/path")
-=======
                 Uri.parse("android-app://com.example.peesit.playground/http/host/path")
->>>>>>> 4b627c9b805a86cea84e724372f16544f5b7cbaa
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
