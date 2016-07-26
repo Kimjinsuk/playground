@@ -67,17 +67,14 @@
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-<<<<<<< HEAD
                 android:text="Check"
                 android:id="@+id/btnclasecheck"
-=======
-                android:text="Cancel"
->>>>>>> 30d20eabb8931d4357ce9e7b5a02962cafa556eb
                 android:layout_weight="1"/>
+
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:text="Check"
+                android:text="Cancel"
                 android:layout_weight="1"/>
 
         </LinearLayout>
