@@ -33,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="9dp"
                 android:layout_marginLeft="10dp"
+                android:id="@+id/rbtnclause"
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical">
                 <RadioButton
@@ -62,6 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:text="Check"
+                android:id="@+id/btnclasecheck"
                 android:layout_weight="1"/>
             <Button
                 android:layout_height="wrap_content"
