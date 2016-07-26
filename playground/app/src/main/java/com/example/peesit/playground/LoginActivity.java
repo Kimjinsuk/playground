@@ -122,7 +122,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
         btnRegist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ClauseActivity.class);
                 // SINGLE_TOP : 이미 만들어진게 있으면 그걸 쓰고, 없으면 만들어서 써라
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
