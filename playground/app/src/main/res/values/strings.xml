@@ -17,4 +17,10 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="baseball">야구</string>
+    <string name="basketball">농구</string>
+    <string name="soccer">축구</string>
+    <string name="table_tennis">탁구</string>
+    <string name="foot_volleyball">족구</string>
 </resources>

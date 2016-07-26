@@ -98,7 +98,20 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
         mEmailSignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                attemptLogin();
+                //attemptLogin();
+
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                // SINGLE_TOP : 이미 만들어진게 있으면 그걸 쓰고, 없으면 만들어서 써라
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+
+                // 동시에 사용 가능
+                // intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+                // intent를 보내면서 다음 액티비티로부터 데이터를 받기 위해 식별번호(1000)을 준다.
+
+                //startActivityForResult(intent, 1000);
+
+                startActivity(intent);
             }
         });
         etEmail = (EditText) findViewById(R.id.etEmail);
@@ -348,7 +361,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                 // Otherwise, set the URL to null.
                 Uri.parse("http://host/path"),
                 // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://org.jjstreet.jjstreet/http/host/path")
+                Uri.parse("android-app://com.example.peesit.playground/http/host/path")
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
