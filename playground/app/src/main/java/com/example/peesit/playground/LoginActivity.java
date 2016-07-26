@@ -122,7 +122,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
         btnRegist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ClauseActivity.class);
                 // SINGLE_TOP : 이미 만들어진게 있으면 그걸 쓰고, 없으면 만들어서 써라
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
@@ -371,11 +371,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                 // Otherwise, set the URL to null.
                 Uri.parse("http://host/path"),
                 // TODO: Make sure this auto-generated app URL is correct.
-<<<<<<< HEAD
-                Uri.parse("android-app://org.playground.playground/http/host/path")
-=======
                 Uri.parse("android-app://com.example.peesit.playground/http/host/path")
->>>>>>> 4b627c9b805a86cea84e724372f16544f5b7cbaa
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();

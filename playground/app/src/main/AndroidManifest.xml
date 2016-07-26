@@ -25,13 +25,17 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/app_name"></activity>
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <activity
+            android:name=".ClauseActivity"
+            android:label="@string/app_name"/>
 
         <activity
             android:name=".SignUpActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateAlwaysHidden">
-            <!-- 자동으로 키보드가 올라오는 것 방지. 근데 작동이 안된다? -->
 
             <!-- ATTENTION: This intent was auto-generated. Follow instructions at
       https://g.co/AppIndexing/AndroidStudio to publish your URLs. -->
@@ -48,13 +52,7 @@
                     android:scheme="http" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-         App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
-=======
-    <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
->>>>>>> 4b627c9b805a86cea84e724372f16544f5b7cbaa
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -62,7 +60,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

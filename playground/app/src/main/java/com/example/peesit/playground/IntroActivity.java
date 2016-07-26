@@ -15,7 +15,7 @@ public class IntroActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE); //인트로화면이므로 타이틀바를 없앤다
         setContentView(R.layout.activity_intro);
         h= new Handler(); //딜레이를 주기 위해 핸들러 생성
-        h.postDelayed(mrun, 4000); // 딜레이 ( 런어블 객체는 mrun, 시간 4초)
+        h.postDelayed(mrun, 1500); // 딜레이 ( 런어블 객체는 mrun, 시간 4초)
     }
 
     Runnable mrun = new Runnable(){
