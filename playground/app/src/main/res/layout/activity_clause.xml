@@ -17,16 +17,12 @@
             android:text="이용약관"
             android:layout_margin="5dp"
             android:textSize="35dp"/>
-<<<<<<< HEAD
+
         <!-- 이용약관 텍스트창 -->
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="280dp"
-=======
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="250dp"
->>>>>>> afc9d0841545037cf7a69eeb7067145e13499c16
             android:layout_gravity="center">
         <TextView
             android:layout_width="match_parent"
@@ -45,12 +41,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
                 android:layout_marginLeft="10dp"
-<<<<<<< HEAD
-                android:id="@+id/rbtnclause"
-=======
                 android:id="@+id/rgclause"
                 android:orientation="vertical"
->>>>>>> afc9d0841545037cf7a69eeb7067145e13499c16
                 android:layout_gravity="center_vertical">
                 <RadioButton
                     android:layout_width="wrap_content"
