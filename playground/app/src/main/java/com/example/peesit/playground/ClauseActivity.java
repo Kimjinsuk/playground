@@ -21,13 +21,20 @@ public class ClauseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clause);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
         final RadioButton rbtn_agree = (RadioButton) findViewById(R.id.rbtn_agree);
         final RadioButton rbtn_nonagree = (RadioButton) findViewById(R.id.rbtn_nonagree);
         btn_check = (Button) findViewById(R.id.btnClauseCheck);
         btn_cancel = (Button) findViewById(R.id.btnClauseCancel);
 
 
+<<<<<<< HEAD
         btn_check.setEnabled(false);
+=======
+>>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
 
 
         rbtn_agree.setOnClickListener(new View.OnClickListener() {
@@ -38,12 +45,19 @@ public class ClauseActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
         rbtn_nonagree.setOnClickListener(new View.OnClickListener() {
+=======
+        rbtn_nonagree.setOnClickListener(new View.OnClickListener(){
+>>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
             public void onClick(View v) {
                 btn_check.setEnabled(false);
                 btn_check.setClickable(false);
                 btn_check.setFocusable(false);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
             }
         });
 

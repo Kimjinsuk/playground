@@ -17,12 +17,19 @@
             android:text="이용약관"
             android:layout_margin="5dp"
             android:textSize="35dp"/>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
         <!-- 이용약관 텍스트창 -->
 
         <ScrollView
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="250dp"
+=======
+            android:layout_height="260dp"
+>>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
             android:layout_gravity="center">
         <TextView
             android:layout_width="match_parent"
@@ -39,9 +46,13 @@
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="27dp"
                 android:layout_marginLeft="10dp"
+<<<<<<< HEAD
                 android:id="@+id/rgclause"
+=======
+                android:id="@+id/rbtnclause"
+>>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical">
                 <RadioButton
@@ -49,8 +60,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/rbtn_agree"
                     android:text="@string/radio_agree"
-                    android:textStyle="bold"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     android:fontFamily="sans-serif"
                     android:layout_marginBottom="20dp"/>
                 <RadioButton
@@ -58,8 +68,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/rbtn_nonagree"
                     android:text="@string/radio_no_agree"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
+                    android:textSize="25sp"
                     android:fontFamily="sans-serif"
                     android:checked="true"/>
 
