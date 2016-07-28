@@ -107,7 +107,6 @@
                         />
                 </LinearLayout>
 
-
                 <!-- editText들의 레이아웃 -->
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -142,87 +141,19 @@
                 </LinearLayout>
             </LinearLayout>
 
-        <!-- 생년월일 레이아웃 -->
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/birth">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="BIRTH :"
-                    android:textSize="23dp"
-                    android:textColor="#000000"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="    "
-                    android:id="@+id/mYear"
-                    android:textSize="23dp"/>
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="년"
-                    android:id="@+id/textView5"
-                    android:textSize="23dp"
-                    android:textColor="#000000"/>
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="    "
-                    android:id="@+id/mMonth"
-                    android:textSize="23dp"
-                    />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="월"
-                    android:id="@+id/textView7"
-                    android:textSize="23dp"
-                    android:textColor="#000000"
-                    />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="    "
-                    android:id="@+id/mDay"
-                    android:textSize="23dp"/>
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="일"
-                    android:id="@+id/textView9"
-                    android:textSize="23dp"
-                    android:textColor="#000000"
-
-                    />
-
-            </LinearLayout>
             <!-- 버튼들의 레이아웃 -->
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_gravity="bottom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="30dp"
                 >
 
                 <Button
                     android:id="@+id/btnDone"
                     android:text="Complete"
-                    android:onClick="insert"
                     style="?android:textAppearanceSmall"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
