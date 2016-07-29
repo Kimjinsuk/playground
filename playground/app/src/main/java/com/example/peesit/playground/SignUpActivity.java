@@ -262,7 +262,7 @@ public class SignUpActivity extends AppCompatActivity {
                     String phone = (String) params[2];
                     String personname = (String) params[3];
 
-                    String link = "http://192.168.56.1/insert.php";  //여기 주소값은 바꿔줘야됨
+                    String link = "http://52.78.95.178:8000";  //여기 주소값은 바꿔줘야됨
                     String data = URLEncoder.encode("email", "UTF-8") + "=" + URLEncoder.encode(email, "UTF-8");
                     data += "&" + URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
                     data += "&" + URLEncoder.encode("phone", "UTF-8") + "=" + URLEncoder.encode(phone, "UTF-8");
