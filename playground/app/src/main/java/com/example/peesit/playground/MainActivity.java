@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         //툴바를 만듬
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        
+
 
     }
 

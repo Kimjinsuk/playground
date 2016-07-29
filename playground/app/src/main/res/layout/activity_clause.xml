@@ -7,7 +7,7 @@
     tools:context=".ClauseActivity" >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_margin="10dp">
 
@@ -26,10 +26,14 @@
         <ScrollView
             android:layout_width="match_parent"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_height="250dp"
 =======
             android:layout_height="260dp"
 >>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
+=======
+            android:layout_height="280dp"
+>>>>>>> b115d9fae19d892b8344deaa655378a629b26564
             android:layout_gravity="center">
         <TextView
             android:layout_width="match_parent"
@@ -44,17 +48,21 @@
 
 
             <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="27dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
+<<<<<<< HEAD
 <<<<<<< HEAD
                 android:id="@+id/rgclause"
 =======
+=======
+                android:layout_marginBottom="10dp"
+>>>>>>> b115d9fae19d892b8344deaa655378a629b26564
                 android:id="@+id/rbtnclause"
 >>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
                 android:orientation="vertical"
-                android:layout_gravity="center_vertical">
+                android:gravity="top">
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

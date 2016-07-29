@@ -5,10 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="@dimen/activity_vertical_margin"
     tools:context="com.example.peesit.playground.LoginActivity"
     android:background="@color/colorBackGround">
 
@@ -26,7 +23,7 @@
     <ScrollView
         android:id="@+id/login_form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fillViewport="false">
 
@@ -52,8 +49,7 @@
             <!-- E-mail 주소 입력칸 -->
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_height="wrap_content">
 
                 <AutoCompleteTextView
                     android:id="@+id/email"
@@ -61,8 +57,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
-                    android:maxLines="1"
-                    android:singleLine="true" />
+                    />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -81,18 +76,12 @@
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
-                    android:inputType="textPassword"
-                    android:maxLines="1"
-                    android:singleLine="true" />
+                    android:inputType="textPassword" />
 
             </android.support.design.widget.TextInputLayout>
 
             <!-- ID와 PW찾기 -->
-            <TextView
-                android:layout_width="115dp"
-                android:layout_height="match_parent"
-                android:text="FIND YOUR ID/PW"
-                android:layout_gravity="right" />
+
 
 
             <!-- LOGIN 과 회원가입 버튼을 묶어줌 -->
@@ -135,23 +124,29 @@
                 android:layout_marginTop="10dp"
                 android:checked="false" />
 
-
-            <!-- Copyright -->
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="@string/action_copyright"
-                    android:id="@+id/textView"
-                    android:layout_marginTop="30dp"
-                    android:layout_gravity="center"/>
-            </android.support.design.widget.TextInputLayout>
-
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="DO YOU FORGOT YOUR ID/PW ?"
+                android:layout_gravity="center" />
 
         </LinearLayout>
+
     </ScrollView>
+    <!-- Copyright -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/action_copyright"
+            android:id="@+id/copyright"
+            android:layout_gravity="center" />
+    </android.support.design.widget.TextInputLayout>
+
 </LinearLayout>
