@@ -188,6 +188,7 @@ public class SignUpActivity extends AppCompatActivity {
                 // 자신을 호출한 Activity로 데이터를 보낸다.
                 setResult(RESULT_OK, result);
                 finish();
+                insertToDatabase(etEmail.getText().toString(),etPassword.getText().toString(),etPhone.getText().toString(),etPersonName.getText().toString());
             }
         });
 
@@ -262,7 +263,7 @@ public class SignUpActivity extends AppCompatActivity {
                     String phone = (String) params[2];
                     String personname = (String) params[3];
 
-                    String link = "http://52.78.95.178:8000";  //여기 주소값은 바꿔줘야됨
+                    String link = "http://52.78.95.178:8080";  //여기 주소값은 바꿔줘야됨
                     String data = URLEncoder.encode("email", "UTF-8") + "=" + URLEncoder.encode(email, "UTF-8");
                     data += "&" + URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
                     data += "&" + URLEncoder.encode("phone", "UTF-8") + "=" + URLEncoder.encode(phone, "UTF-8");
