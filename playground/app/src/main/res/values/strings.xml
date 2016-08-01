@@ -41,4 +41,7 @@
     <string name="soccer">축구</string>
     <string name="table_tennis">탁구</string>
     <string name="foot_volleyball">족구</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
