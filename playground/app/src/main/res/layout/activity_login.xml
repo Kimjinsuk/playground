@@ -89,11 +89,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+<<<<<<< HEAD
                 android:layout_gravity="bottom"
                 android:layout_marginTop="40dp"
+=======
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
                 >
                 <Button
                     android:id="@+id/email_sign_up_button"
+<<<<<<< HEAD
                     style="?android:textAppearanceSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -116,6 +120,28 @@
                     android:clickable="true" />
 
 
+=======
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/action_sign_up"
+                    android:textStyle="bold"
+                    android:background="@color/colorButtonBackGround"
+                    android:clickable="true" />
+                <Button
+                android:id="@+id/email_log_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="@string/action_log_in"
+                android:textStyle="bold"
+                android:background="@color/colorButtonBackGround"
+                android:clickable="true" />
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
             </LinearLayout>
 
             <!-- 자동로그인 CheckBox 구성 -->
@@ -125,18 +151,26 @@
                 android:text="@string/action_auto_login"
                 android:id="@+id/checkBox"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:checked="false" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+<<<<<<< HEAD
                 android:id="@+id/Findbtn"
                 android:layout_marginTop="20dp"
                 android:text="DO YOU FORGOT YOUR ID/PW ?"
                 android:layout_gravity="center"
                 android:padding="10dp"
                 android:background="@color/colorButtonBackGround" />
+=======
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="@color/colorButtonBackGround"
+                android:text="DO YOU FORGOT YOUR ID/PW ?"
+                android:layout_gravity="center" />
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
 
         </LinearLayout>
 
@@ -149,7 +183,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+<<<<<<< HEAD
             android:layout_marginTop="35dp"
+=======
+            android:layout_marginTop="45dp"
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/action_copyright"
             android:id="@+id/copyright"

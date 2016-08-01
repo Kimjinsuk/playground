@@ -75,8 +75,11 @@ public class BirthActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(),SignUpActivity.class);
 
+<<<<<<< HEAD
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
+=======
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
                 startActivity(intent);
 
                 finish();

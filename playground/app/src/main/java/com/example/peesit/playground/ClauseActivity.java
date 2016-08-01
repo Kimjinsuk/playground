@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
 
 /**
  * Created by ChoiJa on 2016-07-26.
@@ -52,7 +56,10 @@ public class ClauseActivity extends AppCompatActivity {
         btn_check.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(ClauseActivity.this, SignUpActivity.class); //인텐트 생성(현 액티비티, 새로 실행할 액티비티)
+<<<<<<< HEAD
                 i.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+=======
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
                 startActivity(i);
                 finish();
             }

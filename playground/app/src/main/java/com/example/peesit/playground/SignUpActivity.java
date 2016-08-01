@@ -2,6 +2,7 @@ package com.example.peesit.playground;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -16,11 +17,22 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.URL;
 import java.net.URLConnection;
+=======
+
+
+import java.io.BufferedReader;
+
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -39,6 +51,10 @@ public class SignUpActivity extends AppCompatActivity {
 
     String temp = "";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -187,6 +203,7 @@ public class SignUpActivity extends AppCompatActivity {
                 insertToDatabase(etEmail.getText().toString(),etPassword.getText().toString(),etPhone.getText().toString(),etPersonName.getText().toString());
 
                 finish();
+                insertToDatabase(etEmail.getText().toString(),etPassword.getText().toString(),etPhone.getText().toString(),etPersonName.getText().toString());
             }
         });
 
@@ -208,8 +225,110 @@ public class SignUpActivity extends AppCompatActivity {
         if (resultCode == 0){
 
             String temp2 = data.getExtras().getString("year");
+<<<<<<< HEAD
 
             String temp3 = data.getExtras().getString("month");
+=======
+            String temp3 = data.getExtras().getString("month");
+            String temp4 = data.getExtras().getString("day");
+
+
+            temp = temp2 + "년 " + temp3 + "월 " + temp4 + "일";
+
+
+            year.setText(temp2);
+            month.setText(temp3);
+            day.setText(temp4);
+
+        }
+
+    }
+
+        //여기서 부터 통신을 위한 코드
+    public void insert(View view) {
+        String email = etEmail.getText().toString();
+        String password = etPassword.getText().toString();
+        String phone = etPhone.getText().toString();
+        String personname = etPersonName.getText().toString();
+
+        insertToDatabase(email, password, phone, personname);
+
+    }
+
+    private void insertToDatabase(String email, String password, String phone, String personname) {
+
+        class InsertData extends AsyncTask<String, Void, String> {
+            ProgressDialog loading;
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                loading = ProgressDialog.show(SignUpActivity.this, "Please Wait", null, true, true);
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+                super.onPostExecute(s);
+                loading.dismiss();
+                Toast.makeText(getApplicationContext(), s, Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            protected String doInBackground(String... params) {
+
+                try {
+                    String email = (String) params[0];
+                    String password = (String) params[1];
+                    String phone = (String) params[2];
+                    String personname = (String) params[3];
+
+<<<<<<< HEAD
+                    String link = "http://52.78.95.178:8080/user/registration/";  //여기 주소값은 바꿔줘야됨
+=======
+                    String link = "http://52.78.95.178:8080";  //여기 주소값은 바꿔줘야됨
+>>>>>>> 3b405450c5e371aca942c350323283313cdb60e6
+                    String data = URLEncoder.encode("email", "UTF-8") + "=" + URLEncoder.encode(email, "UTF-8");
+                    data += "&" + URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
+                    data += "&" + URLEncoder.encode("phone", "UTF-8") + "=" + URLEncoder.encode(phone, "UTF-8");
+                    data += "&" + URLEncoder.encode("personname", "UTF-8") + "=" + URLEncoder.encode(personname, "UTF-8");
+
+                    URL url = new URL(link);
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+
+
+
+                    conn.setDoOutput(true);
+                    OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
+
+                    wr.write(data);
+                    wr.flush();
+
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+
+                    StringBuilder sb = new StringBuilder();
+                    String line = null;
+
+                    // Read Server Response
+                    while ((line = reader.readLine()) != null) {
+                        sb.append(line);
+                        break;
+                    }
+                    return sb.toString();
+                } catch (Exception e) {
+                    Log.e("result - ",  " Exception : " + e.getMessage());
+                    return new String("Exception: " + e.getMessage());
+                }
+
+            }
+        }
+
+        InsertData task = new InsertData();
+        task.execute(email, password, phone, personname);
+    }
+
+
+
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
 
             String temp4 = data.getExtras().getString("day");
 
@@ -303,6 +422,10 @@ public class SignUpActivity extends AppCompatActivity {
         InsertData task = new InsertData();
         task.execute(email, password, phone, personname);
     }
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> 5d63b3c94c98620771b8e0a50695406d046983fc
 
 
