@@ -2,6 +2,7 @@ package com.example.peesit.playground;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -16,11 +17,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 import java.io.BufferedReader;
+
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -38,6 +42,7 @@ public class SignUpActivity extends AppCompatActivity {
     TextView year, month, day;
 
     String temp = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -187,6 +192,7 @@ public class SignUpActivity extends AppCompatActivity {
                 insertToDatabase(etEmail.getText().toString(),etPassword.getText().toString(),etPhone.getText().toString(),etPersonName.getText().toString());
 
                 finish();
+                insertToDatabase(etEmail.getText().toString(),etPassword.getText().toString(),etPhone.getText().toString(),etPersonName.getText().toString());
             }
         });
 
@@ -208,9 +214,7 @@ public class SignUpActivity extends AppCompatActivity {
         if (resultCode == 0){
 
             String temp2 = data.getExtras().getString("year");
-
             String temp3 = data.getExtras().getString("month");
-
             String temp4 = data.getExtras().getString("day");
 
 
@@ -218,9 +222,7 @@ public class SignUpActivity extends AppCompatActivity {
 
 
             year.setText(temp2);
-
             month.setText(temp3);
-
             day.setText(temp4);
 
         }
@@ -228,7 +230,6 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
         //여기서 부터 통신을 위한 코드
-
     public void insert(View view) {
         String email = etEmail.getText().toString();
         String password = etPassword.getText().toString();
@@ -266,14 +267,20 @@ public class SignUpActivity extends AppCompatActivity {
                     String phone = (String) params[2];
                     String personname = (String) params[3];
 
+<<<<<<< HEAD
                     String link = "http://52.78.95.178:8080/user/registration/";  //여기 주소값은 바꿔줘야됨
+=======
+                    String link = "http://52.78.95.178:8080";  //여기 주소값은 바꿔줘야됨
+>>>>>>> 3b405450c5e371aca942c350323283313cdb60e6
                     String data = URLEncoder.encode("email", "UTF-8") + "=" + URLEncoder.encode(email, "UTF-8");
                     data += "&" + URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
                     data += "&" + URLEncoder.encode("phone", "UTF-8") + "=" + URLEncoder.encode(phone, "UTF-8");
                     data += "&" + URLEncoder.encode("personname", "UTF-8") + "=" + URLEncoder.encode(personname, "UTF-8");
 
                     URL url = new URL(link);
-                    URLConnection conn = url.openConnection();
+                    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+
+
 
                     conn.setDoOutput(true);
                     OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
@@ -303,6 +310,11 @@ public class SignUpActivity extends AppCompatActivity {
         InsertData task = new InsertData();
         task.execute(email, password, phone, personname);
     }
-}
+
+
+
+
+    }
+
 
 

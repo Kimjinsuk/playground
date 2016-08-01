@@ -85,34 +85,35 @@
 
 
             <!-- LOGIN 과 회원가입 버튼을 묶어줌 -->
-            <android.support.design.widget.TextInputLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 >
-
-                <Button
-                    android:id="@+id/email_log_in_button"
-                    style="?android:textAppearanceSmall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/action_log_in"
-                    android:textStyle="bold"
-                    android:background="@color/colorButtonBackGround"
-                    android:layout_gravity="right"
-                    android:clickable="true" />
 
                 <Button
                     android:id="@+id/email_sign_up_button"
                     style="?android:textAppearanceSmall"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:layout_weight="1"
                     android:text="@string/action_sign_up"
                     android:textStyle="bold"
                     android:background="@color/colorButtonBackGround"
                     android:clickable="true" />
-            </android.support.design.widget.TextInputLayout>
+                <Button
+                android:id="@+id/email_log_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="@string/action_log_in"
+                android:textStyle="bold"
+                android:background="@color/colorButtonBackGround"
+                android:clickable="true" />
+            </LinearLayout>
 
             <!-- 자동로그인 CheckBox 구성 -->
             <CheckBox
@@ -121,13 +122,15 @@
                 android:text="@string/action_auto_login"
                 android:id="@+id/checkBox"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="30dp"
                 android:checked="false" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="@color/colorButtonBackGround"
                 android:text="DO YOU FORGOT YOUR ID/PW ?"
                 android:layout_gravity="center" />
 
@@ -142,7 +145,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="45dp"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/action_copyright"
             android:id="@+id/copyright"
