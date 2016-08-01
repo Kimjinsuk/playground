@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -182,6 +183,9 @@ public class SignUpActivity extends AppCompatActivity {
 
                 // 자신을 호출한 Activity로 데이터를 보낸다.
                 setResult(RESULT_OK, result);
+
+                insertToDatabase(etEmail.getText().toString(),etPassword.getText().toString(),etPhone.getText().toString(),etPersonName.getText().toString());
+
                 finish();
             }
         });
@@ -262,7 +266,7 @@ public class SignUpActivity extends AppCompatActivity {
                     String phone = (String) params[2];
                     String personname = (String) params[3];
 
-                    String link = "http://52.78.95.178:8000";  //여기 주소값은 바꿔줘야됨
+                    String link = "http://52.78.95.178:8080/user/registration/";  //여기 주소값은 바꿔줘야됨
                     String data = URLEncoder.encode("email", "UTF-8") + "=" + URLEncoder.encode(email, "UTF-8");
                     data += "&" + URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
                     data += "&" + URLEncoder.encode("phone", "UTF-8") + "=" + URLEncoder.encode(phone, "UTF-8");
@@ -289,6 +293,7 @@ public class SignUpActivity extends AppCompatActivity {
                     }
                     return sb.toString();
                 } catch (Exception e) {
+                    Log.e("result - ",  " Exception : " + e.getMessage());
                     return new String("Exception: " + e.getMessage());
                 }
 

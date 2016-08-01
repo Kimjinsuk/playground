@@ -17,70 +17,51 @@
             android:text="이용약관"
             android:layout_margin="5dp"
             android:textSize="35dp"/>
-<<<<<<< HEAD
-
-=======
->>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
         <!-- 이용약관 텍스트창 -->
 
         <ScrollView
             android:layout_width="match_parent"
-<<<<<<< HEAD
-<<<<<<< HEAD
-            android:layout_height="250dp"
-=======
-            android:layout_height="260dp"
->>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
-=======
             android:layout_height="280dp"
->>>>>>> b115d9fae19d892b8344deaa655378a629b26564
             android:layout_gravity="center">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/text_clause"
-            android:padding="20dp"
-            android:layout_margin="10dp"
-            android:background="@color/whiteBackGround"
-            android:textSize="20dp"
-            android:textColor="#000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/text_clause"
+                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:background="@color/whiteBackGround"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
         </ScrollView>
 
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="10dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-                android:id="@+id/rgclause"
-=======
-=======
-                android:layout_marginBottom="10dp"
->>>>>>> b115d9fae19d892b8344deaa655378a629b26564
-                android:id="@+id/rbtnclause"
->>>>>>> 0253559d582a70aaa2c210b3ba54618f01c65680
-                android:orientation="vertical"
-                android:gravity="top">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rbtn_agree"
-                    android:text="@string/radio_agree"
-                    android:textSize="25sp"
-                    android:fontFamily="sans-serif"
-                    android:layout_marginBottom="20dp"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rbtn_nonagree"
-                    android:text="@string/radio_no_agree"
-                    android:textSize="25sp"
-                    android:fontFamily="sans-serif"
-                    android:checked="true"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/rbtnclause"
+            android:orientation="vertical"
+            android:gravity="top">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_agree"
+                android:text="@string/radio_agree"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="20dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_nonagree"
+                android:text="@string/radio_no_agree"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif"
+                android:checked="true"/>
 
-            </RadioGroup>
+        </RadioGroup>
 
         <LinearLayout
             android:layout_width="match_parent"
